@@ -240,6 +240,7 @@
         <table>
           <tr><th>Periode</th><th>EV (Rp)</th><th>Bensin (Rp)</th><th>Hemat</th></tr>
           <tr><td>Harian</td><td>Rp ${cost.daily[0].toLocaleString()}</td><td>Rp ${cost.daily[1].toLocaleString()}</td><td class="highlight">Rp ${(cost.daily[1]-cost.daily[0]).toLocaleString()}</td></tr>
+          <tr><td>Mingguan</td><td>Rp ${cost.weekly[0].toLocaleString("id-ID")}</td><td>Rp ${cost.weekly[1].toLocaleString("id-ID")}</td><td class="highlight">Rp ${(cost.weekly[1] - cost.weekly[0]).toLocaleString("id-ID")}</td></tr>
           <tr><td>Bulanan</td><td>Rp ${cost.monthly[0].toLocaleString()}</td><td>Rp ${cost.monthly[1].toLocaleString()}</td><td class="highlight">Rp ${(cost.monthly[1]-cost.monthly[0]).toLocaleString()}</td></tr>
           <tr><td>Tahunan</td><td>Rp ${cost.yearly[0].toLocaleString()}</td><td>Rp ${cost.yearly[1].toLocaleString()}</td><td class="highlight">Rp ${(cost.yearly[1]-cost.yearly[0]).toLocaleString()}</td></tr>
         </table>
@@ -268,4 +269,5 @@
     }
   </script>
 </body>
+
 </html>
